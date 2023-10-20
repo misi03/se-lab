@@ -19,7 +19,7 @@ public class TorpedoStore {
 
     // update failure rate if it was specified in an environment variable
     String failureEnv = System.getenv("IVT_RATE");
-    if (failureEnv != null){
+    if (failureEnv != null){ 
       try {
         FAILURE_RATE = Double.parseDouble(failureEnv);
       } catch (NumberFormatException nfe) {
